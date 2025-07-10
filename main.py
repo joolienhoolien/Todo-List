@@ -1,12 +1,4 @@
-def get_todos(filepath="todos.txt"):
-    with open(filepath, "r") as file_local:
-        todos = file_local.readlines()
-    return todos
-
-
-def write_todos(todos, filepath="todos.txt"):
-    with open(filepath, "w") as file_local:
-        file_local.writelines(todos)
+from functions import get_todos, write_todos
 
 while True:
     user_action = input("Type 'add', 'show', 'edit', 'complete' or 'exit' -> ")
