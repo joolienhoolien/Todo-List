@@ -1,4 +1,7 @@
 from functions import get_todos, write_todos
+import time
+
+print(f"It is {time.strftime('%H:%M:%S, %m/%d/%Y')}")
 
 while True:
     user_action = input("Type 'add', 'show', 'edit', 'complete' or 'exit' -> ")
